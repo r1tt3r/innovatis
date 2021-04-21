@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "099f542ea79716205ca3d1cc2c478c34",
+    "content-hash": "4b850b3cf807ea5a789e18c5aeecb621",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -18179,6 +18179,59 @@
             "time": "2020-03-23T09:12:05+00:00"
         },
         {
+            "name": "rafaelstz/traducao_magento2_pt_br",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rafaelstz/traducao_magento2_pt_br.git",
+                "reference": "927f580c4f0c1a73fdb90ae62f510d4c384cc2ef"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rafaelstz/traducao_magento2_pt_br/zipball/927f580c4f0c1a73fdb90ae62f510d4c384cc2ef",
+                "reference": "927f580c4f0c1a73fdb90ae62f510d4c384cc2ef",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "magento2-language",
+            "autoload": {
+                "files": [
+                    "registration.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rafael Corrêa Gomes",
+                    "homepage": "https://github.com/rafaelstz"
+                },
+                {
+                    "name": "Magento official translations project for Magento 2",
+                    "homepage": "https://crowdin.com/project/magento-2"
+                }
+            ],
+            "description": "Tradução Magento 2 para Português do Brasil oficial da Magento ",
+            "homepage": "https://github.com/rafaelstz/traducao_magento2_pt_br",
+            "support": {
+                "issues": "https://github.com/rafaelstz/traducao_magento2_pt_br/issues",
+                "source": "https://github.com/rafaelstz/traducao_magento2_pt_br/tree/master"
+            },
+            "funding": [
+                {
+                    "url": "https://www.buymeacoffee.com/rafaelcg",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/rafaelstz",
+                    "type": "github"
+                }
+            ],
+            "time": "2021-02-24T00:43:56+00:00"
+        },
+        {
             "name": "ralouphie/getallheaders",
             "version": "3.0.3",
             "source": {
@@ -26462,7 +26515,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "rafaelstz/traducao_magento2_pt_br": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
