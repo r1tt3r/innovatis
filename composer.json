@@ -14,6 +14,7 @@
     "require": {
         "magento/composer-root-update-plugin": "~1.1",
         "magento/product-community-edition": "2.4.2",
+        "moip/magento2": "^2.0",
         "rafaelstz/traducao_magento2_pt_br": "dev-master"
     },
     "autoload": {
