@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <carriers>
+            <freeshippingmonday>
+                <active>1</active>
+                <model>Innovatis\FreeShippingMonday\Model\Carrier\Shipping</model>
+                <name>Free Shipping Monday</name>
+                <price>0.00</price>
+                <title>ACN Organic Food</title>
+                <specificerrmsg>Este método de envio não está disponível.Entre em contato conosco.</specificerrmsg>
+            </freeshippingmonday>
+        </carriers>
+    </default>
+</config>
