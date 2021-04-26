@@ -14,6 +14,8 @@
     "require": {
         "magento/composer-root-update-plugin": "~1.1",
         "magento/product-community-edition": "2.4.2",
+        "mageplaza/magento-2-product-slider": "^4.0",
+        "mageplaza/module-banner-slider": "^4.0",
         "moip/magento2": "^2.0",
         "rafaelstz/traducao_magento2_pt_br": "dev-master"
     },
