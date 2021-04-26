@@ -86,9 +86,6 @@
         </div>
     </div>
     <div class="copy text-center">
-        <?php echo $this->getLayout()
-            ->createBlock('Magento\Cms\Block\Block')
-            ->setBlockId('footer_copy')
-            ->toHtml(); ?>
+        <address><?= $block->escapeHtml($block->getCopyright()) ?></address>
     </div>
 </div>

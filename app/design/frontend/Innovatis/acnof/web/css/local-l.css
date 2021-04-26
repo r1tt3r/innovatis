@@ -149,6 +149,13 @@ footer .block.newsletter .action.subscribe {
 .authentication-wrapper {
     margin-top: 0;
 }
+.page-footer {
+    padding-bottom: 0;
+}
+footer .copy {
+    font-size: 12px;
+    margin-top: 20px;
+}
 
 @media only screen and (max-width: 768px)  {
     .baskets h2,
