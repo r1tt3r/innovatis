@@ -1,0 +1,94 @@
+<div class="social-midia">
+    <div class="page-main">
+        <div class="text-center">
+            <h2>Novidades fresquinhas no seu e-mail</h2>
+            <p>Quer receber noticias e novidades sobre nossos produtos, além de descontos especiais ?</p>
+            <p>Insira seu email e receba nosso newsletter</p>
+            <div>
+                <?php echo $block->getLayout()->createBlock("Magento\Newsletter\Block\Subscribe")->setTemplate('Magento_Newsletter::subscribe.phtml')->toHtml(); ?>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-main">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-3">
+                    <?php echo $this->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('footer1')
+                        ->toHtml(); ?>
+                </div>
+                <div class="col-md-3">
+                    <?php echo $this->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('footer2')
+
+                        ->toHtml(); ?>
+                </div>
+                <div class="col-md-3">
+                    <?php echo $this->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('footer3')
+                        ->toHtml(); ?>
+                </div>
+                <div class="col-md-3 last">
+                    <?php echo $this->getLayout()
+                        ->createBlock('Magento\Cms\Block\Block')
+                        ->setBlockId('footer4')
+                        ->toHtml(); ?>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v10.0&appId=296773804254299&autoLogAppEvents=1" nonce="ZZc0v4N3"></script>
+            <div class="fb-page"
+                 data-href="https://www.facebook.com/facebook"
+                 data-width="380"
+                 data-hide-cover="false"
+                 data-show-facepile="false"></div>
+        </div>
+
+    </div>
+    <div class="clearfix"></div>
+    <hr>
+
+    <div class="row">
+        <div class="col-md-4">
+            <p>Formas de pagamento</p>
+            <p>
+                <img src="<?php echo $block->getViewFileUrl('images/visa.svg'); ?>" title="Visa" alt="Visa">
+                <img src="<?php echo $block->getViewFileUrl('images/mastercard.svg'); ?>" title="Mastercard"
+                     alt="Mastercard">
+                <img src="<?php echo $block->getViewFileUrl('images/amex.svg'); ?>" title="American Express"
+                     alt="American Express">
+                <img src="<?php echo $block->getViewFileUrl('images/dinersclub.svg'); ?>" title="Dinners Club"
+                     alt="Dinners Club">
+                <img src="<?php echo $block->getViewFileUrl('images/hipercard.svg'); ?>" title="Hipercard"
+                     alt="Hipercard">
+                <img src="<?php echo $block->getViewFileUrl('images/elo.svg'); ?>" title="Elo" alt="Elo">
+            </p>
+        </div>
+        <div class="col-md-4">
+            <?php echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('footer_shipping')
+                ->toHtml(); ?>
+        </div>
+        <div class="col-md-4">
+            <?php echo $this->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('footer_seguranca')
+                ->toHtml(); ?>
+        </div>
+    </div>
+    <div class="copy text-center">
+        <?php echo $this->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('footer_copy')
+            ->toHtml(); ?>
+    </div>
+</div>

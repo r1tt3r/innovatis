@@ -2,5 +2,9 @@
     <head>
         <!--Bootstrap css-->
         <css src="css/bootstrap.css" />
+        <!-- Custom css-->
+        <css src="css/local-l.css"/>
+        <!-- FontAwesome 5-->
+        <css src="https://use.fontawesome.com/releases/v5.7.1/css/all.css" src_type="url"/>
     </head>
 </page>
