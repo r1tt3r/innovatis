@@ -150,9 +150,9 @@ footer .block.newsletter .action.subscribe {
     margin-top: 0;
 }
 .page-footer {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
 }
-footer .copy {
+footer .copy address {
     font-size: 12px;
     margin-top: 20px;
 }
