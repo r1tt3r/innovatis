@@ -3,6 +3,7 @@
 
 namespace Innovatis\FreeShippingMonday\Model\Carrier;
 
+use Magento\Framework\Stdlib\DateTime\TimezoneInterface;
 use Magento\Quote\Model\Quote\Address\RateRequest;
 use Magento\Shipping\Model\Rate\Result;
 
@@ -24,9 +25,9 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
      */
     protected $_rateMethodFactory;
 
-    private \Magento\Framework\Stdlib\DateTime\TimezoneInterface $timezone;
+    private TimezoneInterface $timezone;
     /**
-     * @var \Magento\Framework\Stdlib\DateTime|\Magento\Framework\Stdlib\DateTime\TimezoneInterface
+     * @var \Magento\Framework\Stdlib\DateTime|TimezoneInterface
      */
     private $dateTime;
 
@@ -37,7 +38,7 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
      * @param \Psr\Log\LoggerInterface $logger
      * @param \Magento\Shipping\Model\Rate\ResultFactory $rateResultFactory
      * @param \Magento\Quote\Model\Quote\Address\RateResult\MethodFactory $rateMethodFactory
-     * @param \Magento\Framework\Stdlib\DateTime\TimezoneInterface $timezone
+     * @param TimezoneInterface $timezone
      * @param \Magento\Framework\Stdlib\DateTime $dateTime
      * @param array $data
      */
@@ -47,7 +48,7 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
         \Psr\Log\LoggerInterface $logger,
         \Magento\Shipping\Model\Rate\ResultFactory $rateResultFactory,
         \Magento\Quote\Model\Quote\Address\RateResult\MethodFactory $rateMethodFactory,
-        \Magento\Framework\Stdlib\DateTime\TimezoneInterface $timezone,
+        TimezoneInterface $timezone,
         \Magento\Framework\Stdlib\DateTime $dateTime,
         array $data = []
     ) {
