@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fed8d403492355ea44777bbe8eec52bf",
+    "content-hash": "6e6ee4c0d8e9d4cb1b71b40451907216",
     "packages": [
         {
             "name": "2tvenom/cborencode",
@@ -21060,6 +21060,52 @@
                 }
             ],
             "time": "2020-07-02T05:49:25+00:00"
+        },
+        {
+            "name": "webshopapps/module-matrixrate",
+            "version": "20.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webshopapps/module-matrixrate.git",
+                "reference": "73e38fe9eef523f72eaedaee2c5718daa70577af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webshopapps/module-matrixrate/zipball/73e38fe9eef523f72eaedaee2c5718daa70577af",
+                "reference": "73e38fe9eef523f72eaedaee2c5718daa70577af",
+                "shasum": ""
+            },
+            "type": "magento2-module",
+            "autoload": {
+                "files": [
+                    "src/registration.php"
+                ],
+                "psr-4": {
+                    "WebShopApps\\MatrixRate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "OSL-3.0",
+                "AFL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "ShipperHQ",
+                    "email": "sales@wshipperhq.com",
+                    "homepage": "http://www.Shipperhq.com"
+                },
+                {
+                    "name": "Karen Baker"
+                }
+            ],
+            "description": "Magento Shipping Multiple Table Rates - MatrixRate",
+            "support": {
+                "documentation": "http://docs.shipperhq.com",
+                "issues": "https://github.com/webshopapps/module-matrixrate/issues",
+                "source": "https://github.com/webshopapps/module-matrixrate/tree/20.2.0"
+            },
+            "time": "2021-02-08T15:49:22+00:00"
         },
         {
             "name": "wikimedia/less.php",
