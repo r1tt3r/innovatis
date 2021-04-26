@@ -6784,7 +6784,7 @@ DROP TABLE IF EXISTS `inventory_stock_1`;
 /*!50001 DROP VIEW IF EXISTS `inventory_stock_1`*/;
 SET @saved_cs_client     = @@character_set_client;
 /*!50503 SET character_set_client = utf8mb4 */;
-/*!50001 CREATE VIEW `inventory_stock_1` AS SELECT 
+/*!50001 CREATE VIEW `inventory_stock_1` AS SELECT
  1 AS `product_id`,
  1 AS `website_id`,
  1 AS `stock_id`,
