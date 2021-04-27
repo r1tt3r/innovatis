@@ -26,5 +26,23 @@
                 </field>
             </group>
         </section>
+
+        <tab id="innovatis" translate="label" sortOrder="1">
+            <label>Innovatis</label>
+        </tab>
+
+        <section id="innovatis_freeshipping" translate="label" sortOrder="10" showInDefault="1" showInStore="1" showInWebsite="1">
+            <class>separator-top</class>
+            <label>Shipping Configuration</label>
+            <tab>innovatis</tab>
+            <resource>Innovatis_BundleLimiter::admin</resource>
+            <group id="innovatis_freeshipping_general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                <field id="innovatis_freeshipping_general_days" translate="label" type="multiselect" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Day(s) of Free Shipping</label>
+                    <source_model>Magento\Config\Model\Config\Source\Locale\Weekdays</source_model>
+                    <can_be_empty>1</can_be_empty>
+                </field>
+            </group>
+        </section>
     </system>
 </config>
