@@ -161,6 +161,16 @@ footer .copy address {
 .contact-form, .contact-form .map {
     padding-top: 40px;
 }
+.navigation .level0.active > .level-top, .navigation .level0.has-active > .level-top {
+    border-color: #275D56 !important;
+}
+
+.baskets {
+    padding-bottom: 60px;
+}
+
+
+
 @media only screen and (max-width: 768px)  {
     .baskets h2,
     footer .social-midia h2 {
