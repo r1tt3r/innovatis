@@ -113,7 +113,8 @@ footer .block.newsletter .action.subscribe {
 .logo img {
     width: 260px;
 }
-.baskets h2 {
+.baskets h2,
+.contact-form h1 {
     font-size: 40px;
     color: #275D56;
     font-weight: 800;
@@ -123,7 +124,8 @@ footer .block.newsletter .action.subscribe {
 .baskets p:first-child {
     padding-top: 20px;
 }
-.baskets p {
+.baskets p,
+.contact-form h2 {
     color: #847262;
     font-size: 20px;
 }
@@ -156,7 +158,9 @@ footer .copy address {
     font-size: 12px;
     margin-top: 20px;
 }
-
+.contact-form, .contact-form .map {
+    padding-top: 40px;
+}
 @media only screen and (max-width: 768px)  {
     .baskets h2,
     footer .social-midia h2 {

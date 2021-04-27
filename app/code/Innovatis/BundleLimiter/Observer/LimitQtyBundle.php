@@ -41,14 +41,13 @@ class LimitQtyBundle implements ObserverInterface
 
         $basketActive   = $item->getProduct()->getData('basket_active');
         $basketName     = strtolower($item->getProduct()->getAttributeText('basket_size'));
-        $basketName     = str_replace('é', 'e', $basketName);
         $basketSize     = 0;
 
         switch ($basketName) {
             case 'grande':
                 $basketSize = 12;
                 break;
-            case 'media':
+            case 'média':
                 $basketSize = 8;
                 break;
             case 'pequena':
@@ -59,7 +58,7 @@ class LimitQtyBundle implements ObserverInterface
         if ($basketActive) {
             if ($basketSize && $basketSize !== $totalQty) {
                 throw new \Magento\Framework\Exception\LocalizedException(
-                    __('Para cesta de tamanho ' . $basketName . ' é necessario adicionar ' . $basketSize . ' produtos.')
+                    __('For basket of size %1 it is necessary to add %2 products.', $basketName, $basketSize)
                 );
             }
         }
