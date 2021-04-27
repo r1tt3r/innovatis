@@ -30,6 +30,7 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
      * @var \Magento\Framework\Stdlib\DateTime|TimezoneInterface
      */
     private $dateTime;
+    private \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfig;
 
     /**
      * Shipping constructor.
@@ -57,6 +58,7 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
         parent::__construct($scopeConfig, $rateErrorFactory, $logger, $data);
         $this->timezone = $timezone;
         $this->dateTime = $dateTime;
+        $this->scopeConfig = $scopeConfig;
     }
 
     /**
@@ -85,10 +87,24 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
      */
     public function collectRates(RateRequest $request)
     {
+        if (!$this->getConfigFlag('active')) {
+            return false;
+        }
+
+        $storeScope = \Magento\Store\Model\ScopeInterface::SCOPE_STORE;
         $currentTimestamp = $this->timezone->scopeTimeStamp();
         $dayByCurrentTimestamp = $this->timezone->date($currentTimestamp)->format('l');
 
-        if (!$this->getConfigFlag('active') || (strtolower($dayByCurrentTimestamp) !== 'monday')) {
+        $days = [0 => 'sunday', 1 => 'monday', 2 => 'tuesday', 3 => 'wednesday', 4 => 'thursday', 5 => 'friday', 6 => 'saturday'];
+        $daysAllowed = $this->scopeConfig->getValue('innovatis_freeshipping/innovatis_freeshipping_general/innovatis_freeshipping_general_days', $storeScope);
+        $daysAllowed = explode(',', $daysAllowed);
+
+        $nameDaysAlloweds = [];
+        foreach ($daysAllowed as $dayAllowed) {
+            $nameDaysAlloweds[] = $days[$dayAllowed];
+        }
+
+        if (!in_array(strtolower($dayByCurrentTimestamp), $nameDaysAlloweds, true)) {
             return false;
         }
 
