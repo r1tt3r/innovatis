@@ -5,7 +5,7 @@
             <block class="Mageplaza\Productslider\Block\CategoryId" name="home.slider.destaque" template="productslider.phtml">
                 <arguments>
                     <argument name="loop" xsi:type="string">1</argument>
-                    <argument name="category_id" xsi:type="string">3</argument>
+                    <argument name="category_id" xsi:type="string">9</argument>
                     <argument name="products_count" xsi:type="string">8</argument>
                     <argument name="heading" xsi:type="string">Category Id</argument>
                     <argument name="description" xsi:type="string">Produtos em destaque</argument>
@@ -15,7 +15,7 @@
             <block class="Mageplaza\Productslider\Block\CategoryId" name="home.slider.verduras" template="productslider.phtml">
                 <arguments>
                     <argument name="loop" xsi:type="string">1</argument>
-                    <argument name="category_id" xsi:type="string">3</argument>
+                    <argument name="category_id" xsi:type="string">5</argument>
                     <argument name="products_count" xsi:type="string">8</argument>
                     <argument name="heading" xsi:type="string">Category Id</argument>
                     <argument name="description" xsi:type="string">Verduras em destaque</argument>
