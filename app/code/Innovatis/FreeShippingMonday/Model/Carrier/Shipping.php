@@ -97,11 +97,13 @@ class Shipping extends \Magento\Shipping\Model\Carrier\AbstractCarrier implement
 
         $days = [0 => 'sunday', 1 => 'monday', 2 => 'tuesday', 3 => 'wednesday', 4 => 'thursday', 5 => 'friday', 6 => 'saturday'];
         $daysAllowed = $this->scopeConfig->getValue('innovatis_freeshipping/innovatis_freeshipping_general/innovatis_freeshipping_general_days', $storeScope);
-        $daysAllowed = explode(',', $daysAllowed);
-
         $nameDaysAlloweds = [];
-        foreach ($daysAllowed as $dayAllowed) {
-            $nameDaysAlloweds[] = $days[$dayAllowed];
+
+        if ($daysAllowed) {
+            $daysAllowed = explode(',', $daysAllowed);
+            foreach ($daysAllowed as $dayAllowed) {
+                $nameDaysAlloweds[] = $days[$dayAllowed];
+            }
         }
 
         if (!in_array(strtolower($dayByCurrentTimestamp), $nameDaysAlloweds, true)) {
