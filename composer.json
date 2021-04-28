@@ -18,7 +18,8 @@
         "mageplaza/module-banner-slider": "^4.0",
         "moip/magento2": "^2.0",
         "rafaelstz/traducao_magento2_pt_br": "dev-master",
-        "webshopapps/module-matrixrate": "^20.2"
+        "webshopapps/module-matrixrate": "^20.2",
+        "ext-curl": "*"
     },
     "autoload": {
         "exclude-from-classmap": [
