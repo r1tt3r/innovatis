@@ -325,6 +325,7 @@ return [
         'Mageplaza_Core' => 1,
         'Mageplaza_BannerSlider' => 1,
         'Mageplaza_Productslider' => 1,
+        'Mageplaza_Smtp' => 1,
         'Moip_Magento2' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
