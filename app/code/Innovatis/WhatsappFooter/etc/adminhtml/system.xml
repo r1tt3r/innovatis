@@ -7,7 +7,7 @@
             <tab>innovatis</tab>
             <resource>Innovatis_BundleLimiter::admin</resource>
             <group id="innovatis_whatsapp_general" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
-                <field id="innovatis_whatsapp_general_active" translate="label" type="multiselect" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <field id="innovatis_whatsapp_general_active" translate="label" type="select" sortOrder="15" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Active</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <can_be_empty>1</can_be_empty>

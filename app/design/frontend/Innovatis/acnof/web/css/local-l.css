@@ -169,7 +169,14 @@ footer .copy address {
     padding-bottom: 60px;
 }
 
-
+.whatsapp{
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+}
+.whatsapp img {
+    width: 60px;
+}
 
 @media only screen and (max-width: 768px)  {
     .baskets h2,
@@ -182,9 +189,4 @@ footer .copy address {
     }
 }
 
-.whatsapp{
-    position: fixed;
-    bottom: 120px;
-    right: 10px;
-}
 

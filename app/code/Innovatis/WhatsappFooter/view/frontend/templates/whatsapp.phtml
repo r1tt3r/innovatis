@@ -1,7 +1,16 @@
-<div class="whatsapp">
-    <p><a title="Atendimento" href="https://api.whatsapp.com/send?phone=5553999566761&amp;text=Oieee!!%20Nosso%20atendimento%20via%20WhatsApp%20%C3%A9%20de%20segunda%20%C3%A0%20sexta%2C%20das%208h%20as%2017h.%20Como%20podemos%20lhe%20ajudar%3F" target="_blank" rel="noopener">
-            <img src="<?php echo $this->getViewFileUrl('Innovatis_WhatsappFooter::images/whatsapp_img.png'); ?>"
+<?php
+/** @var \Magento\Framework\View\Element\Template $block */
+/** @var \Magento\Framework\Escaper $escaper */
+/** @var \Innovatis\WhatsappFooter\ViewModel\PhoneInfo $viewModel */
+$viewModel = $block->getData('view_model');
+?>
 
-            alt="" width="80" height="100"/>
-        </a></p>
+<?php if ($viewModel->isActive()): ?>
+<div class="whatsapp">
+    <p>
+        <a title="Atendimento" href="https://api.whatsapp.com/send?phone=<?= $viewModel->getPhone() ?>&amp;text=Oieee!!%20Nosso%20atendimento%20via%20WhatsApp%20%C3%A9%20de%20segunda%20%C3%A0%20sexta%2C%20das%208h%20as%2017h.%20Como%20podemos%20lhe%20ajudar%3F" target="_blank" rel="noopener">
+            <img src="<?= $this->getViewFileUrl('Innovatis_WhatsappFooter::images/whatsapp_img.png'); ?>" alt="WhatsApp" />
+        </a>
+    </p>
 </div>
+<?php endif; ?>
