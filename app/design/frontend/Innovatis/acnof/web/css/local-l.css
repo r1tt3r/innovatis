@@ -169,6 +169,15 @@ footer .copy address {
     padding-bottom: 60px;
 }
 
+.whatsapp{
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+}
+.whatsapp img {
+    width: 60px;
+}
+
 .opc-wrapper .form-shipping-address .fieldset .field .label {
     font-weight: 400;
     clip: inherit;
@@ -187,3 +196,5 @@ footer .copy address {
         font-size: 18px;
     }
 }
+
+
