@@ -178,6 +178,14 @@ footer .copy address {
     width: 60px;
 }
 
+.opc-wrapper .form-shipping-address .fieldset .field .label {
+    font-weight: 400;
+    clip: inherit;
+    width: inherit;
+    height: inherit;
+    position: inherit;
+}
+
 @media only screen and (max-width: 768px)  {
     .baskets h2,
     footer .social-midia h2 {
