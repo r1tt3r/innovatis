@@ -181,3 +181,10 @@ footer .copy address {
         font-size: 18px;
     }
 }
+
+.whatsapp{
+    position: fixed;
+    bottom: 120px;
+    right: 10px;
+}
+
